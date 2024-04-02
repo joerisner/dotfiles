@@ -1,0 +1,77 @@
+{
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace"
+  },
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.console.historySuggestions": false,
+  "debug.inlineValues": "on",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.accessibilitySupport": "off",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeLens": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": true,
+  "extensions.ignoreRecommendations": true,
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "git.ignoreMissingGitWarning": true,
+  "git.openRepositoryInParentFolders": "never",
+  "html.autoClosingTags": false,
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "json.maxItemsComputed": 25000,
+  "markdown.preview.markEditorSelection": false,
+  "markdown.styles": [
+    "style.css"
+  ],
+  "playwright.reuseBrowser": false,
+  "prettier.documentSelectors": [
+    "**/*.astro"
+  ],
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "redhat.telemetry.enabled": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.telemetryLevel": "off",
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.location": "left",
+  "todo-tree.general.showActivityBarBadge": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "NOTE"
+  ],
+  "todo-tree.highlights.defaultHighlight": {
+    "background": "#A178C9",
+    "foreground": "#ffffff",
+    "icon": "alert",
+    "opacity": 100,
+    "type": "tag"
+  },
+  "window.commandCenter": false,
+  "window.restoreWindows": "one",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Material Theme Ocean",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none"
+}
