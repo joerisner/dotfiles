@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+# Sync local git repositories with remote versions. Note that this is
+# potentially a destructive process as the script prunes local git branches.
+
+REPOS=(dotfiles for-joy-over-it highlights-api jrisner notes)
+
+printf "\033[0;32m=== Updating Repos ===\033[0m\n"
+
+for REPO in ${REPOS[@]}; do
+  REMOTE_REPO_ADDRESS="https://github.com/joerisner/${REPO}.git"
+  LOCAL_REPO_ADDRESS=~/projects/${REPO}
+  
+  if [[ "$(git -C ${LOCAL_REPO_ADDRESS} remote show ${REMOTE_REPO_ADDRESS} | grep 'HEAD branch' | cut -d' ' -f5)" != "main" ]]; then
+    printf "\033[0;31m=== Default branch of '${REPO}' needs to be updated to 'main' ===\033[0m\n"
+    exit 1
+  fi
+  
+  printf "\033[0;32m=== Updating ${REPO} ===\033[0m\n"
+  git -C "${LOCAL_REPO_ADDRESS}" checkout main
+  git -C "${LOCAL_REPO_ADDRESS}" pull
+done
