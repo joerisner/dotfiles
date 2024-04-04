@@ -1,5 +1,5 @@
 #-- ALIASES --#
-[[ -f ~/.zsh-aliases ]] && source ~/.zsh-aliases
+[[ -f ~/.zsh/aliases ]] && source ~/.zsh/aliases
 
 #-- PREFERENCES --#
 PROMPT="%F{#f07178}%n%f | %B%F{#89ddff}%~%f%b $ "
