@@ -1,16 +1,16 @@
 [color]
-	ui = true
+    ui = true
 [core]
-	excludesfile = ~/.gitignore-global
+    excludesfile = ~/.gitignore-global
 [fetch]
-	prune = true
+    prune = true
 [init]
-	defaultbranch = main
+    defaultbranch = main
 [pull]
-	rebase = true
+    rebase = true
 [push]
-	autoSetupRemote = true
+    autoSetupRemote = true
 
 # Enforce SSH instead of HTTPS
 [url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
+    insteadOf = https://github.com/
