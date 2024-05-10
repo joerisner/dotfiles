@@ -17,6 +17,10 @@ for REPO in ${REPOS[@]}; do
   fi
   
   printf "\033[0;32m=== Updating ${REPO} ===\033[0m\n"
-  git -C "${LOCAL_REPO_ADDRESS}" checkout main
-  git -C "${LOCAL_REPO_ADDRESS}" pull
+  if [[ -z "$(git -C ${LOCAL_REPO_ADDRESS} status -s)" ]]; then
+    git -C "${LOCAL_REPO_ADDRESS}" checkout main
+    git -C "${LOCAL_REPO_ADDRESS}" pull
+  else
+    printf "\033[0;33mSkipping this repo since there are local changes not yet committed\033[0m\n"
+  fi
 done
