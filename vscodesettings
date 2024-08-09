@@ -9,6 +9,9 @@
     "editor.suggest.insertMode": "replace"
   },
   "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit"
+    },
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "debug.allowBreakpointsEverywhere": true,
