@@ -18,5 +18,8 @@ export NVM_DIR="$HOME/.nvm"
 # Update PATH to run Ruby commands from .rbenv/shims first, then fallback to /usr/local instead of /usr/bin.
 RUBY_PATH_SETTINGS="~/.rbenv/shims:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin"
 
+#-- TERRAFORM --#
+export TF_LOG_PATH=./terraform.log
+
 #-- PATH --#
 export PATH="$RUBY_PATH_SETTINGS:/usr/local/sbin:$PATH"
