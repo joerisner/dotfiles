@@ -3,7 +3,7 @@
 # Sync local git repositories with remote versions. Note that this is
 # potentially a destructive process as the script prunes local git branches.
 
-REPOS=(dotfiles for-joy-over-it highlights-api jrisner notes)
+REPOS=(dotfiles for-joy-over-it github-settings highlights-api jrisner notes)
 
 printf "\033[0;32m=== Updating Repos ===\033[0m\n"
 
