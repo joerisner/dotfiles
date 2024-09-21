@@ -40,13 +40,9 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.maxItemsComputed": 25000,
   "markdown.preview.markEditorSelection": false,
-  "markdown.styles": [
-    "style.css"
-  ],
+  "markdown.styles": ["style.css"],
   "playwright.reuseBrowser": false,
-  "prettier.documentSelectors": [
-    "**/*.astro"
-  ],
+  "prettier.documentSelectors": ["**/*.astro"],
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "redhat.telemetry.enabled": false,
@@ -59,13 +55,7 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.tabs.location": "left",
   "todo-tree.general.showActivityBarBadge": false,
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "NOTE"
-  ],
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "NOTE"],
   "todo-tree.highlights.defaultHighlight": {
     "background": "#A178C9",
     "foreground": "#ffffff",
