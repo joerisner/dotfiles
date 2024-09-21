@@ -45,6 +45,8 @@
   "prettier.documentSelectors": ["**/*.astro"],
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
+  "python.createEnvironment.trigger": "off",
+  "python.terminal.activateEnvironment": false,
   "redhat.telemetry.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
   "telemetry.telemetryLevel": "off",
