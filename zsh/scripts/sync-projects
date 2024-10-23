@@ -5,20 +5,15 @@
 
 REPOS=(dotfiles for-joy-over-it github-settings highlights-api jrisner notes)
 
-printf "\033[0;32m=== Updating Repos ===\033[0m\n"
+printf "\033[0;34m=== Updating Repos ===\033[0m\n"
 
 for REPO in ${REPOS[@]}; do
-  REMOTE_REPO_ADDRESS="https://github.com/joerisner/${REPO}.git"
   LOCAL_REPO_ADDRESS=~/projects/${REPO}
+  DEFAULT_BRANCH=$(git -C ${LOCAL_REPO_ADDRESS} remote show origin | awk '/HEAD branch/ {print $NF}')
   
-  if [[ "$(git -C ${LOCAL_REPO_ADDRESS} remote show ${REMOTE_REPO_ADDRESS} | grep 'HEAD branch' | cut -d' ' -f5)" != "main" ]]; then
-    printf "\033[0;31m=== Default branch of '${REPO}' needs to be updated to 'main' ===\033[0m\n"
-    exit 1
-  fi
-  
-  printf "\033[0;32m=== Updating ${REPO} ===\033[0m\n"
+  printf "\033[0;34m=== Updating ${REPO} ===\033[0m\n"
   if [[ -z "$(git -C ${LOCAL_REPO_ADDRESS} status -s)" ]]; then
-    git -C "${LOCAL_REPO_ADDRESS}" checkout main
+    git -C "${LOCAL_REPO_ADDRESS}" checkout "${DEFAULT_BRANCH}"
     git -C "${LOCAL_REPO_ADDRESS}" pull
   else
     printf "\033[0;33mSkipping this repo since there are local changes not yet committed\033[0m\n"
