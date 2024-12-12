@@ -32,6 +32,8 @@
   "files.associations": {
     "*.mdx": "markdown"
   },
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.editorDecoration.template": "added: ${authorDateAgo}",
   "git.ignoreMissingGitWarning": true,
   "git.openRepositoryInParentFolders": "never",
   "html.autoClosingTags": false,
