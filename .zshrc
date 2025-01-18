@@ -19,7 +19,7 @@ export NVM_DIR="${HOME}/.nvm"
 RUBY_PATH_SETTINGS="${HOME}/.rbenv/shims:/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin"
 
 #-- PYTHON --#
-UV_DIR="${HOME}/.uv"
+export UV_DIR="${HOME}/.uv"
 export UV_CACHE_DIR="${UV_DIR}/cache"
 export UV_CONFIG_FILE="${UV_DIR}/uv.toml"
 export UV_PYTHON_INSTALL_DIR="${UV_DIR}/python/versions"
