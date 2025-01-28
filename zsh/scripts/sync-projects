@@ -5,13 +5,11 @@
 
 REPOS=(dotfiles for-joy-over-it github-settings highlights-api jrisner notes)
 
-printf "\033[0;34m=== Updating Repos ===\033[0m\n"
-
 for REPO in "${REPOS[@]}"; do
   LOCAL_REPO_ADDRESS=~/projects/${REPO}
   DEFAULT_BRANCH=$(git -C "${LOCAL_REPO_ADDRESS}" remote show origin | awk '/HEAD branch/ {print $NF}')
   
-  printf "\033[0;34m=== Updating %s ===\033[0m\n" "${REPO}"
+  printf "\033[0;35m==> Updating %s\033[0m\n" "${REPO}"
   if [[ -z "$(git -C "${LOCAL_REPO_ADDRESS}" status -s)" ]]; then
     git -C "${LOCAL_REPO_ADDRESS}" checkout "${DEFAULT_BRANCH}"
     git -C "${LOCAL_REPO_ADDRESS}" pull
