@@ -26,6 +26,7 @@ export UV_PYTHON_INSTALL_DIR="${UV_DIR}/python/versions"
 export UV_PYTHON_BIN_DIR="${UV_DIR}/python/bin"
 export UV_PYTHON_DOWNLOADS=manual
 export UV_PYTHON_PREFERENCE=only-managed
+export UV_TOOL_DIR="${UV_DIR}/tools"
 PYTHON_PATH_SETTINGS="${UV_PYTHON_BIN_DIR}"
 
 #-- TERRAFORM --#
