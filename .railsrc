@@ -1,15 +1,6 @@
 # Each time `rails new` is ran, rails will pull the options from this file (located in the home dir) and apply them as arguments.
---skip-action-cable
---skip-action-mailer
---skip-action-mailbox
---skip-active-storage
---skip-asset-pipeline
---skip-bootsnap
+# See https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/app/app_generator.rb for details on --minimal.
+--minimal
 --skip-bundle
---skip-ci
---skip-devcontainer
---skip-docker
---skip-javascript
---skip-kamal
 --skip-keeps
 --skip-test
