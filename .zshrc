@@ -27,8 +27,8 @@ export UV_PYTHON_BIN_DIR="${UV_DIR}/python/bin"
 export UV_PYTHON_DOWNLOADS=manual
 export UV_PYTHON_PREFERENCE=only-managed
 export UV_TOOL_DIR="${UV_DIR}/tools"
-# UV symlinks UV_TOOL_DIR to ~/.local/bin
-PYTHON_PATH_SETTINGS="${UV_PYTHON_BIN_DIR}:${HOME}/.local/bin"
+export UV_TOOL_BIN_DIR="${UV_DIR}/tools/bin"
+PYTHON_PATH_SETTINGS="${UV_PYTHON_BIN_DIR}:${UV_TOOL_BIN_DIR}"
 
 #-- TERRAFORM --#
 export TF_LOG_PATH=./terraform.log
