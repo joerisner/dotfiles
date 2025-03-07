@@ -1,16 +1,27 @@
+[branch]
+  sort = -committerdate
 [color]
-    ui = true
+	ui = true
 [core]
-    excludesfile = ~/.gitignore-global
+	excludesfile = ~/.config/git/.gitignore-global
+[diff]
+  colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
 [fetch]
-    prune = true
+	prune = true
+	pruneTags = true
 [init]
-    defaultbranch = main
+	defaultbranch = main
 [pull]
-    rebase = true
+	rebase = true
 [push]
-    autoSetupRemote = true
-
+	autoSetupRemote = true
+[tag]
+  sort = version:refname
 # Enforce SSH instead of HTTPS
 [url "ssh://git@github.com/"]
-    insteadOf = https://github.com/
+  insteadOf = https://github.com/
+[user]
+  name = <user>
+  email = <email>
