@@ -2,7 +2,7 @@
 [[ -f "${HOME}/.zsh/aliases" ]] && source "${HOME}/.zsh/aliases"
 
 #-- PREFERENCES --#
-PROMPT="%F{#f07178}%n%f | %B%F{#89ddff}%~%f%b $ "
+PROMPT="%F{#be94e4}%n%f | %F{#b6d976}%~%f%b $ "
 export CLICOLOR=1
 
 #-- EDITOR --#
