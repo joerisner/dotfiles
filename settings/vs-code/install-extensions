@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Install VS Code Extensions. Assumes VS Code CLI is installed.
+
+EXTENSIONS=(
+  astro-build.astro-vscode
+  bierner.markdown-emoji
+  bradlc.vscode-tailwindcss
+  charliermarsh.ruff
+  esbenp.prettier-vscode
+  gruntfuggly.todo-tree
+  ms-playwright.playwright
+  ms-python.debugpy
+  ms-python.python
+  ms-python.vscode-pylance
+  ms-vscode.vscode-speech
+  postman.postman-for-vscode
+  redhat.vscode-yaml
+  sdras.night-owl
+  streetsidesoftware.code-spell-checker
+  tamasfe.even-better-toml
+  timonwong.shellcheck
+)
+
+for EXTENSION in "${EXTENSIONS[@]}"; do
+  code --install-extension "$EXTENSION"
+done
