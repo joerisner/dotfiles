@@ -42,7 +42,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.maxItemsComputed": 25000,
   "markdown.preview.markEditorSelection": false,
-  "markdown.styles": ["style.css"],
+  "markdown.styles": ["https://www.jrisner.dev/styles/vscode-md-styles.css"],
   "playwright.reuseBrowser": false,
   "prettier.documentSelectors": ["**/*.astro"],
   "prettier.printWidth": 120,
