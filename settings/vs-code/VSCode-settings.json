@@ -2,11 +2,26 @@
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[dockercompose]": {
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "prettier.singleQuote": false
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
   "[json]": {
     "editor.quickSuggestions": {
       "strings": true
     },
-    "editor.suggest.insertMode": "replace"
+    "prettier.trailingComma": "none"
+  },
+  // JSON with Comments (settings.json)
+  "[jsonc]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "prettier.trailingComma": "none"
   },
   "[python]": {
     "editor.codeActionsOnSave": {
@@ -14,6 +29,8 @@
     },
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "accessibility.voice.speechTimeout": 2000,
+  "chat.viewSessions.orientation": "stacked",
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.historySuggestions": false,
   "debug.inlineValues": "on",
@@ -22,55 +39,91 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.codeLens": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontSize": 13,
   "editor.formatOnSave": true,
+  "editor.hover.above": true,
+  "editor.hover.delay": 800,
+  "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
+  "editor.suggest.insertMode": "replace",
   "editor.tabSize": 2,
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": true,
   "extensions.ignoreRecommendations": true,
   "files.associations": {
+    // See icons at: https://raw.githubusercontent.com/jesseweed/seti-ui/master/screenshot-icons.png
     "*.mdx": "markdown"
   },
-  "git.blame.editorDecoration.enabled": false,
+  "files.readonlyInclude": {
+    "package-lock.json": true,
+    "uv.lock": true,
+    "yarn.lock": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "git.blame.editorDecoration.enabled": true,
   "git.blame.editorDecoration.template": "added: ${authorDateAgo}",
   "git.ignoreMissingGitWarning": true,
+  "git.mergeEditor": true,
   "git.openRepositoryInParentFolders": "never",
+  "git.showActionButton": {
+    "commit": false,
+    "publish": false,
+    "sync": false
+  },
+  "github.copilot.enable": {
+    "*": false,
+    "markdown": false,
+    "plaintext": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
   "html.autoClosingTags": false,
-  "java.compile.nullAnalysis.mode": "automatic",
-  "java.configuration.updateBuildConfiguration": "automatic",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "json.maxItemsComputed": 25000,
   "markdown.preview.markEditorSelection": false,
   "markdown.styles": ["https://www.jrisner.dev/styles/vscode-md-styles.css"],
-  "playwright.reuseBrowser": false,
+  "postman.mcp.notifications.postmanMCP": false,
+  "postman.telemetry.enabled": false,
   "prettier.documentSelectors": ["**/*.astro"],
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
+  "python.analysis.autoImportCompletions": true,
   "python.createEnvironment.trigger": "off",
   "python.terminal.activateEnvironment": false,
   "redhat.telemetry.enabled": false,
+  "ruff.configurationPreference": "filesystemFirst",
+  "ruff.lineLength": 120,
   "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.explorerKind": "external",
   "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorStyleInactive": "line",
   "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.initialHint": false,
   "terminal.integrated.shellIntegration.decorationsEnabled": "never",
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.tabs.location": "left",
+  "testing.showCoverageInExplorer": false,
+  "todo-tree.filtering.includeHiddenFiles": true,
   "todo-tree.general.showActivityBarBadge": false,
-  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "NOTE"],
+  "todo-tree.general.tags": ["BUG", "HACK", "FIXME", "TODO", "NOTE", "INFO"],
   "todo-tree.highlights.defaultHighlight": {
-    "background": "#A178C9",
-    "foreground": "#ffffff",
+    "foreground": "#28E473",
     "icon": "alert",
-    "opacity": 100,
+    "textDecoration": "underline",
     "type": "tag"
   },
+  "typescript.preferGoToSourceDefinition": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
   "window.restoreWindows": "one",
   "window.zoomLevel": 1,
-  "workbench.colorTheme": "Material Theme Ocean",
+  "workbench.colorTheme": "Night Owl",
   "workbench.editor.empty.hint": "hidden",
   "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none"

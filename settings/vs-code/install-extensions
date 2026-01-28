@@ -16,6 +16,7 @@ EXTENSIONS=(
   ms-vscode.vscode-speech
   postman.postman-for-vscode
   redhat.vscode-yaml
+  samuelcolvin.jinjahtml
   sdras.night-owl
   streetsidesoftware.code-spell-checker
   tamasfe.even-better-toml
