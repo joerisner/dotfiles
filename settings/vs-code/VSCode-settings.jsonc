@@ -47,6 +47,17 @@
   "editor.minimap.enabled": false,
   "editor.suggest.insertMode": "replace",
   "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    // Set python docstring color to match comment color
+    "textMateRules": [
+      {
+        "scope": ["string.quoted.docstring"],
+        "settings": {
+          "foreground": "#637777"
+        }
+      }
+    ]
+  },
   "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": true,
